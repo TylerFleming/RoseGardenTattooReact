@@ -2,6 +2,10 @@
 
 header {
     padding: 27px 60px;
+
+    @media (max-width: 767px) {
+        padding: 27px 20px;
+    }
 }
 
 nav {
@@ -9,9 +13,18 @@ nav {
     justify-content: flex-end;
 }
 
+
 a {
     font-family: $playfair;
     color: $brand-white;
     font-size: 32px;
     text-decoration: none;
+
+    @media (max-width: 1023px) {
+        font-size: 26px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
 }

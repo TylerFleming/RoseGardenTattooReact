@@ -1,0 +1,70 @@
+@import '../App.scss';
+
+section#portfolio-section {
+
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-auto-rows: min-content;
+    grid-template-areas: 
+    "zero zero one one two two two two"
+    "zero zero one one two two two two"
+    "zero zero text text text text text text "
+    "three three four four four four four four"
+    "three three four four four four four four"
+    "five five five five six six six six"
+    "five five five five six six six six"
+    ;
+    grid-gap: 16px;
+    align-items: stretch;
+}
+
+.portfolio__header {
+    grid-area: text;
+    font-family: $playfair;
+    font-size: 100px;
+    font-weight: 400;
+    font-style: italic;
+    color: $brand-white;
+    text-align: center;;
+}
+
+.portfolio__item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio__item.item-0 {
+    grid-area: zero;
+}
+
+.portfolio__item.item-1 {
+    grid-area: one;
+}
+
+.portfolio__item.item-2 {
+    grid-area: two;
+}
+
+.portfolio__item.item-3 {
+    grid-area: three;
+}
+
+.portfolio__item.item-4 {
+    grid-area: four;
+}
+
+.portfolio__item.item-5 {
+    grid-area: five;
+}
+
+.portfolio__item.item-6 {
+    grid-area: six;
+}
+
+.portfolio__item.item-7 {
+    grid-area: seven;
+}
