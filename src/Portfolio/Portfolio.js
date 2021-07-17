@@ -9,7 +9,6 @@ import './Portfolio.scss'
 const Portfolio = () => {
 
     
-
     return <>
     <section id="portfolio-section">
         <div className="portfolio">
@@ -18,9 +17,9 @@ const Portfolio = () => {
             {
                 data.map((data, index) => {
                     let { id, url, alt } = data
-                    return <>
-                    <PortfolioItem id={index} key={id} url={url} alt={alt}  />
-                    </>
+                    return (
+                    <PortfolioItem key={id} id={index} url={url} alt={alt} />
+                    )
                 })
             }
         </div>

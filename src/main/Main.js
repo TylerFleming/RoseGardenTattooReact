@@ -3,6 +3,7 @@ import './Main.scss'
 import Intro from '../intro/Intro'
 import Header from '../Header/Header'
 import Portfolio from '../Portfolio/Portfolio';
+import Artists from '../Artists/Artists';
 
 const Main = () => {
     return (
@@ -10,6 +11,7 @@ const Main = () => {
             <Header link="Book Appointment" />
             <Intro/>
             <Portfolio />
+            <Artists />
         </div>
     )
 }

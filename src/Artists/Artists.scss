@@ -1,0 +1,52 @@
+@import '../App.scss';
+
+section#artists-section {
+    margin-top: 100px;
+    padding: 0px 60px;
+    height: 100vh;
+}
+
+.artists-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+
+.artists {
+    grid-column: 1 / span 2;
+}
+
+.artists__headline {
+    font-family: $playfair;
+    font-size: 100px;
+    font-weight: 400;
+    font-style: italic;
+    color: $brand-white;
+
+    @media (max-width: 1023px) {
+        font-size: 65px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 60px;
+    }
+}
+
+.artist-list-container {
+    ul > li {
+        button {
+            display: block;
+            font-family: $playfair;
+            font-size: 75px;
+            font-weight: 400;
+            color: $brand-white;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+                &:focus {
+                    border: 1px solid $brand-white;
+                }
+        }
+    }
+}
