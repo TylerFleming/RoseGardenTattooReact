@@ -4,9 +4,18 @@ section#artists-section {
     margin-top: 100px;
     padding: 0px 60px;
     height: 100vh;
+
+    @media (max-width: 1110px) {
+        height: auto;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0px 30px;
+    }
 }
 
 .artists-grid-container {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
@@ -15,16 +24,23 @@ section#artists-section {
 
 .artists {
     grid-column: 1 / span 2;
+    grid-row: 1;
+    z-index: 1
 }
 
+
+
 .artists__headline {
+    margin-top: 50px;
     font-family: $playfair;
-    font-size: 100px;
+    font-size: 140px;
     font-weight: 400;
     font-style: italic;
     color: $brand-white;
 
-    @media (max-width: 1023px) {
+    @media (max-width: 1110px) {
+        display: inline;
+        position: static;
         font-size: 65px;
     }
 
@@ -33,7 +49,48 @@ section#artists-section {
     }
 }
 
+.break {
+    margin-top: 0px;
+    display: block;
+    position: absolute;
+    top: 185px;
+    font-family: $playfair;
+    font-size: 140px;
+    font-weight: 400;
+    font-style: italic;
+    color: $brand-white;
+
+
+    @media (max-width: 1110px) {
+        display: inline;
+        position: static;
+        font-size: 65px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 60px;
+    }
+}
+
+.artists__headline__container {
+    @media (max-width: 1110px) {
+        margin-bottom: 75px;
+        text-align: center;
+    }
+}
+
 .artist-list-container {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    margin-top: 400px;
+    z-index: 1;
+
+    @media (max-width: 1110px) {
+        display: none;
+    }
+
+
     ul > li {
         button {
             display: block;
@@ -50,3 +107,88 @@ section#artists-section {
         }
     }
 }
+
+
+.artist-information-container {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: 1110px) {
+        grid-column: 1/span 3;
+        grid-row: 2;
+    }
+}
+
+.render-container {
+    position: relative;
+    display: none;
+        &.active {
+            display: block;
+            opacity: 1;
+        }
+    
+    @media (max-width: 1110px) {
+        display: block;
+        margin-bottom: 25px;
+    }
+}
+
+.images__artist {
+    object-fit: cover;
+    max-height: 800px;
+    width: 100%;
+    object-position: top;
+}
+
+
+.images__description {
+    position: absolute;
+    bottom: 4px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 225px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8995973389355743) 49%, rgba(255, 255, 255, 0) 100%);
+    overflow: hidden;
+}
+
+.images__name {
+    z-index: 1;
+    overflow: hidden;
+}
+
+.artist-name {
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-end;
+    font-family: $playfair;
+    font-size: 45px;
+    font-weight: 400;
+    color: $brand-white;
+
+    @media (max-width: 767px) {
+        font-size: 26px;
+    }
+}
+
+.artist-description {
+    font-family: $playfair;
+    font-size: 24px;
+    font-weight: 400;
+    color: $brand-white;
+    z-index: 2;
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+}
+
+.images__social-icon {
+    height: 32px;
+    margin-left: 10px;
+}
+

@@ -7,22 +7,24 @@ export const data = [
         id: 1,
         name: 'Thomas',
         fullName: 'Thomas Delaney',
-        twitter: 'www.twitter.com/',
+        twitter: 'https://www.twitter.com/',
         description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
-        photo: ''
+        photo: artist1
     },
     {
         id: 2,
         name: 'Hilda',
         fullName: 'Hilda Moore',
-        twitter: 'www.twitter.com/',
-        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+        twitter: 'https://www.twitter.com/',
+        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+        photo: artist2
     },
     {
         id: 3,
         name: 'Rosie',
         fullName: 'Rosie Lee',
-        twitter: 'www.twitter.com/',
-        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum'
+        twitter: 'https://www.twitter.com/',
+        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+        photo: artist3
     },
 ]
