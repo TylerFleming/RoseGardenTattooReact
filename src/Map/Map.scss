@@ -1,0 +1,83 @@
+@import '../App.scss';
+
+
+section#map-section {
+    margin-top: 100px;
+    
+    @media (max-width: 767px) {
+        margin-top: 50px;
+    }
+}
+
+.shop-contact {
+    padding: 75px 60px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101010;
+
+    @media (max-width: 828px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 767px) {
+        padding: 75px 30px;
+    }
+
+}
+
+.shop-headline {
+    h2 {
+        font-family: $playfair;
+        font-size: 75px;
+        font-weight: 400;
+        color: $brand-white;
+
+        @media (max-width: 1360px) {
+            font-size: 45px;
+        }
+
+
+        @media (max-width: 828px) {
+            font-size: 45px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 45px;
+            text-align: center;
+        }
+    }
+}
+
+.shop-hours {
+    margin-left: 100px;
+    
+    @media (max-width: 1360px) {
+        margin-left: 50px;    
+    }
+    
+    @media (max-width: 828px) {
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;  
+    }
+
+    h3, a {
+        font-family: $playfair;
+        font-size: 45px;
+        font-weight: 400;
+        color: $brand-white;
+
+        @media (max-width: 1360px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 1041px) {
+            font-size: 24px;
+        }
+
+    }
+}
+
+

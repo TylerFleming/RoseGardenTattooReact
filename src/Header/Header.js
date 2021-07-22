@@ -17,7 +17,7 @@ const Header = ({ link }) => {
     return (
         <header>
             <nav>
-                    <a ref={navlink} href={`#${link.split(' ').join('')}`}>{link}</a>
+                    <a ref={navlink} href={`#${link}`}>Book Appointment</a>
             </nav>
         </header>
     )

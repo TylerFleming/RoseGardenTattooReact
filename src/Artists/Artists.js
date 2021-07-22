@@ -25,6 +25,7 @@ const Artists = () => {
         .fromTo('.artist-description', {opacity: 0, translateY: '100%',}, {opacity: 1, translateY:'0%'})
     }
 
+
     return (
         <section id="artists-section">
             <div className="artists-grid-container">
@@ -64,6 +65,8 @@ const Artists = () => {
                         }
                 </div>
             </div>
+            <div id="map"></div>
+
         </section>
     )
 }

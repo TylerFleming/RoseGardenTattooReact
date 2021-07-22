@@ -4,11 +4,11 @@ import Intro from '../intro/Intro'
 import Header from '../Header/Header'
 import Portfolio from '../Portfolio/Portfolio';
 import Artists from '../Artists/Artists';
-
+ 
 const Main = () => {
     return (
         <div className="container">
-            <Header link="Book Appointment" />
+            <Header link="map-section" />
             <Intro/>
             <Portfolio />
             <Artists />
