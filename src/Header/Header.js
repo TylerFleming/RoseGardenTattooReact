@@ -10,7 +10,7 @@ const Header = ({ link }) => {
     useEffect( () => {
         
         let tl2 = gsap.timeline({delay: 2})
-        tl2.fromTo(navlink.current, {translateY: '-200%'}, {translateY: '0%'})
+        tl2.fromTo(navlink.current, {translateY: '-210%'}, {translateY: '0%'})
 
     })
 

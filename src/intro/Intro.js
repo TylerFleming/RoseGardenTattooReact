@@ -30,7 +30,7 @@ const Intro = () => {
         // tl.to(introRevealElement.current, 1, {translateY: '200%'})
         .fromTo(background.current, {opacity: 0},{opacity: 1}, '-=0.45')
         // tl.to(introRevealElement.current, {opacity: 0}, '-=0.7')
-        .fromTo(scroll.current, 0.5, {opacity: 0, translateY:'100%'}, {opacity: 1, translateY: '0%'})
+        .fromTo(scroll.current, 0.5, {opacity: 0, translateY:'100%'}, {opacity: 1, translateY: '-70%'})
 
         //intro leave animation
         let tlReverse = gsap.timeline({
